@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+<!--HEADER SECTION-->
+<header>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light shadow mb-4 rounded" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-1 fw-bold" href="#">
+                <img src="assets/img/pos-system-icon.jpg" alt="" width="50" height="50" class="d-inline-block align-top">
+                POS System
+            </a>
+            <ul class="nav justify-content-end fs-2">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">DashBoard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Items</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+    <!--    ITEM FORM-->
+    <section class="container-xxl border p-2 m-2 bg-info" style="height: 300px">
+        <div class="row g-3">
+            <div class="col">
+                <label class="form-label p-2 fs-5">Item ID:</label>
+                <input type="text" class="form-control" aria-label="First name">
+            </div>
+            <div class="col">
+                <label class="form-label p-2 fs-5">Description:</label>
+                <input type="text" class="form-control" aria-label="Last name">
+            </div>
+            <div class="col">
+                <label class="form-label p-2 fs-5">Pack Size:</label>
+                <input type="text" class="form-control" aria-label="Last name">
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col">
+                <label class="form-label p-2 fs-5">Qty:</label>
+                <input type="text" class="form-control" aria-label="First name">
+            </div>
+            <div class="col">
+                <label class="form-label p-2 fs-5">Unit Price:</label>
+                <input type="text" class="form-control" aria-label="Last name">
+            </div>
+        </div>
+    </section>
+
+    <!--    BUTTON SECTION-->
+    <div class="border">
+        <div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Customer Id" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-success m-2 rounded-pill fs-5" style="width: 110px">Save</button>
+        <button type="button" class="btn btn-outline-primary m-2 rounded-pill fs-5" style="width: 110px">Update</button>
+        <button type="button" class="btn btn-outline-danger m-2 rounded-pill fs-5" style="width: 110px">Delete</button>
+    </div>
+
+    <section>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Item ID</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Pack Size</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Unit Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<!--FOOTER SECTION-->
+<footer class="bg-primary text-white text-center text-lg-start fixed-bottom">
+    <!-- Copyright -->
+    <div class="text-center p-3 fs-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white fs-3" href="">G D S SAMPATH</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
